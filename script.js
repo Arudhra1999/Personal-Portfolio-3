@@ -68,6 +68,14 @@ function typeWriter(element, text, speed = 100) {
     }
     type();
 }
+let currentSlide = 0;
+
+function moveCarousel(direction) {
+  const track = document.querySelector('.carousel-track');
+  const totalSlides = document.querySelectorAll('.testimonial-card').length;
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
 
 // Initialize typing effect when page loads
 window.addEventListener('load', function() {
