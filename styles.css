@@ -220,6 +220,7 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+    display: block;
 }
 
 .social-links {
@@ -547,8 +548,9 @@ body {
 
 .carousel-container {
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   max-width: 900px;
+  position: relative;
 }
 
 .carousel-track {
@@ -564,6 +566,7 @@ body {
   border-radius: 15px;
   text-align: center;
   margin: 0 1rem;
+  flex: 0 0 100%;
 }
 
 .testimonial-text {
@@ -675,6 +678,16 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 1rem;
+  }
+
+  .carousel-btn {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
 /* Animations */
 @keyframes fadeInUp {
     from {
