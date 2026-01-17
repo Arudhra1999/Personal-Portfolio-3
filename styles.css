@@ -539,6 +539,7 @@ body {
     border-radius: 10px;
 }
 
+/* LinkedIn Recommendation Section */
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -559,20 +560,25 @@ body {
 }
 
 .testimonial-card {
-  min-width: 100%;
+  width: 100%;
+  flex: 0 0 100%;
   padding: 2rem;
   box-shadow: var(--card-shadow);
   background: var(--bg-primary);
   border-radius: 15px;
   text-align: center;
   margin: 0 1rem;
-  flex: 0 0 100%;
+  box-sizing: border-box;
 }
 
 .testimonial-text {
   font-size: 1.1rem;
   color: var(--text-secondary);
   margin-bottom: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;       /* Preserves line breaks and wraps text */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .testimonial-author {
